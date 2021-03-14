@@ -6,6 +6,11 @@ public class BuilderMain {
     }
 
     public void startBuilderMain() {
+        Director director = new Director();
+        HouseBuilder houseBuilder = new HouseBuilder();
+        director.createHouse(houseBuilder);
+        House house = houseBuilder.getResult();
 
+        System.out.println(house);
     }
 }
